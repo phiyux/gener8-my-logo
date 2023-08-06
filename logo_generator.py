@@ -36,5 +36,5 @@ def generate_logo(text_content, text_color, label):
 
     # Conversion of the PIL image to Tkinter image
     tk_image = ImageTk.PhotoImage(logo)
-    label.config(image=tk_image)
+    label.create_image(0, 0, anchor="nw", image=tk_image)
     label.image = tk_image
